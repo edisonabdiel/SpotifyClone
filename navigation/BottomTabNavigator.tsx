@@ -1,4 +1,4 @@
-import { Ionicons, Entypo, EvilIcons, MaterialCommunityIcons, FontAwesome5} from '@expo/vector-icons';
+import { Ionicons, Entypo, EvilIcons, FontAwesome5} from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
@@ -36,7 +36,7 @@ export default function BottomTabNavigator() {
         name="Your Library"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="library-music-outlined" size={30} style={{ marginBottom: -3 }} color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome5 name="book-open" size={30} style={{ marginBottom: -3 }} color={color} />,
         }}
       />
       <BottomTab.Screen
